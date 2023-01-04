@@ -1,5 +1,10 @@
 class PostsController < ApplicationController
+  # Incluindo o concern
+  include SuggestedUsers
+
   before_action :set_post, only: %i[ show ]
+  # Usuários sugeridos somente na tela inicial
+  before_action :set_suggested_users, only: %i[index]
 
   def index
     @posts = Post.all

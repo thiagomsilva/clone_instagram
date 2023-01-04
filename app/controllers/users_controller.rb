@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
-    # include SuggestedUsers
+    # Incluindo o concern
+    include SuggestedUsers
 
-    # before_action :set_suggested_users, only: %i[show]
+    # Usuários sugeridos somente na tela inicial
+    before_action :set_suggested_users, only: %i[show]
 
     def show
         # Buscar pelo parâmetro username ao invés do ID como é padrão
