@@ -13,7 +13,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    # Permissão para somente o usuário logado criar o post
+    @post = Post.new(post_params.merge(created_by: current_user))
 
     if @post.save
       redirect_to post_url(@post), notice: "Post foi criado com sucesso!"

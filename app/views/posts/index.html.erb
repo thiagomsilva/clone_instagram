@@ -1,6 +1,8 @@
 <main class="posts-page container">
   <section class="posts">
     <% if @posts.any? %>
+      <%# A Variável @posts no plural siginifica que vai ter um looping com o each 
+      por debaixo dos panos chamando a partial _show.html.erb %>
       <%= render @posts %>
     <% else %>
       Nenhum post ainda.

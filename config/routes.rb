@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   devise_for :users, only: %i[sessions registrations passwords]
 
-  # resources :users, only: %i[show], param: :username
+  # Mostrar somente a rota show passando o parâmetro username na URL 
+  resources :users, only: %i[show], param: :username
   # get "edit_profile", to: "users#edit"
   # patch "profile", to: "users#update"
 
