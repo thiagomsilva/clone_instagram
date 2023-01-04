@@ -10,7 +10,7 @@ import "channels"
 import "../src/application.css"
 
 import "./flashMessages";
-// import "./modal";
+import "./modal";
 // import "./likes";
 
 // require("trix");
