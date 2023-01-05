@@ -12,6 +12,6 @@ class User < ApplicationRecord
   # has_many :likes
   # has_many :comments
 
-  # has_one_attached :avatar
-  # validates :avatar, content_type: %i[png jpg jpeg]
+  has_one_attached :avatar
+  validates :avatar, content_type: %i[png jpg jpeg]
 end

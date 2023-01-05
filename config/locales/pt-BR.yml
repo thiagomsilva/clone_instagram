@@ -28,5 +28,5 @@ pt-BR:
   errors:
     messages:
       # Active Storage Validations
-      content_type_invalid: "é um tipo de arquivo inválido"
+      content_type_invalid: "tem um formato inválido. São aceitos fotos nos formatos png, jpg e jpeg"
       file_size_out_of_range: "tem %{file_size} mas o limite é 5 MB"
