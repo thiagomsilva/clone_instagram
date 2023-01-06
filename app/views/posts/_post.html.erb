@@ -1,7 +1,8 @@
 <article class="post">
   <header>
     <nav>
-      <%# <%= user_avatar(post.created_by) %>
+      <%# Utilizando o helper user_avatar em application_helper %>
+      <%= user_avatar(post.created_by) %>
       <h4><%= post.created_by.username %></h4>
     </nav>
 
