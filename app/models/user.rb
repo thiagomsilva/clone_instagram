@@ -9,7 +9,7 @@ class User < ApplicationRecord
 
   # Associação do post com o usuário, mas quando um user for apagado, os posts tbm serão apagados
   has_many :posts, foreign_key: :created_by_id, dependent: :destroy
-  # has_many :likes
+  has_many :likes
   # has_many :comments
 
   has_one_attached :avatar
