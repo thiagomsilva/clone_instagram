@@ -5,7 +5,7 @@ class Post < ApplicationRecord
     belongs_to :created_by, class_name: "User"
   
     has_many :likes, dependent: :destroy
-    # has_many :comments, dependent: :destroy
+    has_many :comments, dependent: :destroy
   
     # Relacionamento para upload da tabela photo criado pela gem active_storage
     has_one_attached :photo

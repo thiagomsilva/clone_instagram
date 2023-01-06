@@ -11,7 +11,8 @@ class PostsController < ApplicationController
   end
 
   def show
-    # @comment = Comment.new
+    # Setar o novo comentário na view show
+    @comment = Comment.new
   end
 
   def new
