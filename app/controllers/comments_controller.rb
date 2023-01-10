@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
     @comment = current_user.comments.new(comment_params)
 
     if @comment.save
+      # Envia para todos os usuários que estão conectados no streaming comment_channel o novo comentário criado por um outro usuário utilizando websockets. 
       CommentChannel.broadcast_to("comment_channel",
         post_id: @comment.post_id,
         comment_created: render_to_string(partial: @comment))
