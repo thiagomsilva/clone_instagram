@@ -13,6 +13,7 @@ Aplicação clone do Instagram.
 - [active_storage](https://github.com/rails/rails/tree/main/activestorage)
 - [active_storage_validations](https://github.com/igorkasyanchuk/active_storage_validations)
 - [action_text](https://github.com/rails/actiontext/tree/archive)
+- [redis](https://github.com/redis-store/redis-rails)
 - [Yarn](https://yarnpkg.com/)
 - [tingle.js](https://tingle.robinparisi.com/)
 - [toastify-js](https://github.com/apvarun/toastify-js)
